@@ -2,7 +2,10 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Collections;
-// test 
+//Obs! this program should be investigated the output is not that expected.
+
+
+
 
 
 
@@ -114,7 +117,10 @@ class MainClass
         // Console.WriteLine(CityTraffic(Console.ReadLine()));
         Console.WriteLine(CityTraffic(stingArray));
 
+        // the output is not correct it should be investigated
         // out put should be: 1:82,2:53,3:80,4:79,5:70,7:46,8:38,15:68,38:45.
+        // just now the output is the following which is not correct even 1 is comming two times
+        // 1:60,4:57,3:58,5:61,2:61,7:61,8:61,1:60,3:58
     }
 
 }
