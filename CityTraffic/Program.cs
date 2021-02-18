@@ -35,10 +35,10 @@ class MainClass
             else
            maxtraffics += Node.ToString() + ":" + neighborsTraffic.ToString() + ",";
         }
-        // to do sort
-       // var listofstr = maxtraffics.Split(',');
-       // listofstr = listofstr.OrderBy(x => x.ToCharArray().ElementAt(0));
-        //string str = listofstr.OrderBy(x => x.ToCharArray().ElementAt(0)).ToString();
+        // Sort and remove the duplicates.
+        var listofstr = maxtraffics.Split(',');
+        var sortlistofstr = listofstr.OrderBy(x => x.ToCharArray().ElementAt(0)).Distinct().ToList();
+        maxtraffics = string.Join(",", sortlistofstr.ToArray());
         return maxtraffics;
 
     }
