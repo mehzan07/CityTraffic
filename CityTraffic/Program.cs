@@ -91,7 +91,12 @@ class MainClass
             maxNodeTraffic = lNeTr.Max();
         else
             maxNodeTraffic = 0;
+        // Obs! if we want to callculate all traffic goes to one node regardless of taking max of neighebors then we should take the following code.
         return maxNodeTraffic;
+       
+        //if (lNeTr.Count != 0)
+        //    maxNodeTraffic = lNeTr.Sum();
+
     }
 
     // returns neighbor of a node in the strArr.
